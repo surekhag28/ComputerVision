@@ -17,6 +17,8 @@ Steps followed for building the end to end pipeline.
  5. Exposing model inference using front-end application
  The endpoints can also be accessed via front end application which is developed using Flasgger API. Flasgger is a Flask extension to extract OpenAPI-Specification from all Flask views registered in our API. It also comes with SwaggerUI embedded so that we can access http://localhost:5000/apidocs and visualize and interact with the API resources.
  
+ Use the url "http://0.0.0.0:8000/apidocs" in browser to view the Swagger UI
+ 
  ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
  
  6. Containerasiation using Docker
