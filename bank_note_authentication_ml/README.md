@@ -1,6 +1,6 @@
-Bank note authentication using Machine Learning and deploying it using Flask web app on Google Cloud Platform as Docker Image.
+### Bank note authentication using Machine Learning and deploying it using Flask web app on Google Cloud Platform as Docker Image.
 
-Steps to be followed for building the end to end pipeline.
+#### Steps to be followed for building the end to end pipeline.
 
 1. Create the classifier using any Machine Learning library and train it locally.
 2. Save the trained model as pickle file on local storage.
@@ -12,11 +12,11 @@ Steps to be followed for building the end to end pipeline.
     
 7. Either run the app using "curl" command as shown in snapshot or directly access the Public DNS IP address for running the service.
 
-    Using curl command:-
+    ##### Using curl command:-
 
     ![alt text](/bank_note_authentication_ml/images/pic1.png?raw=true)
     
-    Accessing as HTTP service:-
+    ##### Accessing as HTTP service:-
     
     ![alt text](/bank_note_authentication_ml/images/pic2.png?raw=true)
     
