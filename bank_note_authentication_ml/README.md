@@ -10,8 +10,14 @@ Steps to be followed for building the end to end pipeline.
 6. Build the image/ Containeraise the web app using Docker on logged in EC2 instance.
     Command:- docker run -d -p 8000:8000 bank-auth
     
-    
 7. Either run the app using "curl" command as shown in snapshot or directly access the Public DNS IP address for running the service.
+
+Using curl command:-
+
+![alt text](https://github.com/surekhag28/ComputerVision/bank_note_authentication_ml/images/master/pic1.png?raw=true)
+
+
+
 
 
  
