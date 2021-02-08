@@ -1,28 +1,17 @@
 Bank note authentication using Machine Learning and deploying it using Flask web app on Google Cloud Platform as Docker Image.
 
-Steps followed for building the end to end pipeline.
+Steps to be followed for building the end to end pipeline.
 
-1. Created classifier using Machine Learning library "scikit-learn".
-    In order to train the model on given dataset, I used RandomForest classifier from sklearn ML library which end up giving accuracy score as 0.98.
-  
-2. Saved the trained model locally as pickle file.
-    After traing the model, saved it as pickle file on local system in order to use it later for inference purpose from web app.
+1. Create the classifier using any Machine Learning library and train it locally.
+2. Save the trained model as pickle file on local storage.
+3. Create the web app using Flask framework exposing two REST endpoints to user.
+4. In order to view the prediction output of two services, we can use Flasgger API (Swagger).
+5. Login to AWS EC2 instance and install Docker if not present.
+6. Build the image/ Containeraise the web app using Docker on logged in EC2 instance.
+    Command:- docker run -d -p 8000:8000 bank-auth
     
-3. Created web app using Flask.
-    Now, In order to access the model for inference purpose, I created two end points using Flask mini web-framework. One end point takes data as query parameter from user while in the other we are taking number of observations from file (csv file).
     
- 4. Testing end points using Postman
- After building the endpoints, they can be easily tested using Postman Rest client or using "curl" command.
- 
- 5. Exposing model inference using front-end application
- The endpoints can also be accessed via front end application which is developed using Flasgger API. Flasgger is a Flask extension to extract OpenAPI-Specification from all Flask views registered in our API. It also comes with SwaggerUI embedded so that we can access http://localhost:5000/apidocs and visualize and interact with the API resources.
- 
- Use the url "http://0.0.0.0:8000/apidocs" in browser to view the Swagger UI
- 
- ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
- 
- 6. Containerasiation using Docker
- Created the docker image for the application as per the commands specified in Dockerfile.
- 
- 7. Deployment on Google Kubernetes engine cloud.
+7. Either run the app using "curl" command as shown in snapshot or directly access the Public DNS IP address for running the service.
+
+
  
