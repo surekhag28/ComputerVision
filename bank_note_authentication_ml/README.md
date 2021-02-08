@@ -12,9 +12,19 @@ Steps to be followed for building the end to end pipeline.
     
 7. Either run the app using "curl" command as shown in snapshot or directly access the Public DNS IP address for running the service.
 
-Using curl command:-
+    Using curl command:-
 
-![alt text](/bank_note_authentication_ml/images/pic1.png?raw=true)
+    ![alt text](/bank_note_authentication_ml/images/pic1.png?raw=true)
+    
+    Accessing as HTTP service:-
+    
+    ![alt text](/bank_note_authentication_ml/images/pic2.png?raw=true)
+    
+    ![alt text](/bank_note_authentication_ml/images/pic3.png?raw=true)
+    
+    ![alt text](/bank_note_authentication_ml/images/pic4.png?raw=true)
+    
+    ![alt text](/bank_note_authentication_ml/images/pic5.png?raw=true)
 
 
 
