@@ -17,6 +17,9 @@
     Command:- sudo yum install docker
     
 8. Build the image/ Containeraise the web app using Docker on logged in EC2 instance. <br />
+    Command:- docker build -t bank_note_auth .
+    
+9. Run the built docker image to access the service. <br />
     Command:- docker run -d -p 8000:8000 bank-auth
     
 9. Either run the app using "curl" command as shown in snapshot or directly access the Public DNS IP address for running the service.
