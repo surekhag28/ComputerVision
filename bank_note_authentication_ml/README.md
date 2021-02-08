@@ -6,11 +6,20 @@
 2. Save the trained model as pickle file on local storage.
 3. Create the web app using Flask framework exposing two REST endpoints to user.
 4. In order to view the prediction output of two services, we can use Flasgger API (Swagger).
-5. Login to AWS EC2 instance and install Docker if not present.
-6. Build the image/ Containeraise the web app using Docker on logged in EC2 instance.
+5. Login to AWS and launch any free tier EC2 instance.
+
+6. Use ssh service in order to connect to launched remote EC2 instance.
+    Command:- ssh -i "bank-auth-key.pem" ec2-user@ec2-13-58-107-101.us-east-2.compute.amazonaws.com
+              ssh -i <keypair-file> <Public DNS IP>
+    
+
+7. Then install Docker on the instance if not present. <br />
+    Command:- sudo yum install docker
+    
+8. Build the image/ Containeraise the web app using Docker on logged in EC2 instance. <br />
     Command:- docker run -d -p 8000:8000 bank-auth
     
-7. Either run the app using "curl" command as shown in snapshot or directly access the Public DNS IP address for running the service.
+9. Either run the app using "curl" command as shown in snapshot or directly access the Public DNS IP address for running the service.
 
     ##### Using curl command:-
 
