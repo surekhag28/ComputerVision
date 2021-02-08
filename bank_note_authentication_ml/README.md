@@ -14,7 +14,7 @@ Steps to be followed for building the end to end pipeline.
 
 Using curl command:-
 
-![alt text](/images/pic1.png?raw=true)
+![alt text](/bank_note_authentication_ml/images/pic1.png?raw=true)
 
 
 
