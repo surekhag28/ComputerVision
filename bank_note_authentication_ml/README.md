@@ -14,7 +14,7 @@ Steps to be followed for building the end to end pipeline.
 
 Using curl command:-
 
-![alt text](https://github.com/surekhag28/ComputerVision/bank_note_authentication_ml/images/master/pic1.png?raw=true)
+![alt text](https://github.com/surekhag28/ComputerVision/bank_note_authentication_ml/images/main/pic1.png?raw=true)
 
 
 
