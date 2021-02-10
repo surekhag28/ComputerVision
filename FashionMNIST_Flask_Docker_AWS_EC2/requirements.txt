@@ -1,0 +1,6 @@
+flasgger
+Flask
+numpy
+pandas
+requests
+torchvision
