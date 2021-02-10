@@ -9,7 +9,7 @@
 5. Login to AWS and launch any free tier EC2 instance.
 
 6. Use ssh service in order to connect to launched remote EC2 instance. <br />
-    Command:- ssh -i "bank-auth-key.pem" ec2-user@ec2-13-58-107-101.us-east-2.compute.amazonaws.com <br />
+    Command:- ssh -i "image-classifier-key.pem" ec2-user@ec2-13-58-107-101.us-east-2.compute.amazonaws.com <br />
               ssh -i "keypair-file" "Public DNS IP"
     
 
