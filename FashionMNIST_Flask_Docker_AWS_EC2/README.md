@@ -1,45 +1,35 @@
-### Bank note authentication using Machine Learning and deploying it using Flask web app on Google Cloud Platform as Docker Image.
+### FashionMNIST classifier using Deep Learning (PyTorch framework) and deploying it using Flask web app on AWS EC2 as a Docker Image.
 
 #### Steps to be followed for building the end to end pipeline.
 
-1. Create the classifier using any Machine Learning library and train it locally.
-2. Save the trained model as pickle file on local storage.
-3. Create the web app using Flask framework exposing two REST endpoints to user.
-4. In order to view the prediction output of two services, we can use Flasgger API (Swagger).
+1. Create the classifier using any Deep Learning framework (PyTorch) and train it either locally or on any cloud platform.
+2. Save the trained model on local storage.
+3. Create the web app using Flask framework exposing REST endpoints to user.
+4. In order to view the prediction output of the services, we have created "index.html" file and saved it under templates folder.
 5. Login to AWS and launch any free tier EC2 instance.
 
 6. Use ssh service in order to connect to launched remote EC2 instance. <br />
     Command:- ssh -i "bank-auth-key.pem" ec2-user@ec2-13-58-107-101.us-east-2.compute.amazonaws.com <br />
-              ssh -i <keypair-file> <Public DNS IP>
+              ssh -i "keypair-file" "Public DNS IP"
     
 
 7. Then install Docker on the instance if not present. <br />
     Command:- sudo yum install docker
     
 8. Build the image/ Containeraise the web app using Docker on logged in EC2 instance. <br />
-    Command:- docker build -t bank_note_auth .
+    Command:- docker build -t fashion .
     
 9. Run the built docker image to access the service. <br />
-    Command:- docker run -d -p 8000:8000 bank-auth
+    Command:- docker run -d -p 8000:8000 fashion
     
-9. Either run the app using "curl" command as shown in snapshot or directly access the Public DNS IP address for running the service.
+9. Perform inference on the trained model by using HTTP protocol.
 
-    ##### Using curl command:-
-
-    ![alt text](/bank_note_authentication_ml/images/pic1.png?raw=true)
     
     ##### Accessing as HTTP service:-
     
-    ![alt text](/bank_note_authentication_ml/images/pic2.png?raw=true)
+    ![alt text](/FashionMNIST_Flask_Docker_AWS_EC2/images/pic1.png?raw=true)
     
-    ![alt text](/bank_note_authentication_ml/images/pic3.png?raw=true)
-    
-    ![alt text](/bank_note_authentication_ml/images/pic4.png?raw=true)
-    
-    ![alt text](/bank_note_authentication_ml/images/pic5.png?raw=true)
-
-
-
+     
 
 
  
