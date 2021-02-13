@@ -18,16 +18,16 @@ The service will upload the image on server and will do the inference using pret
 As a result it will send category details in json format to react app which will display the class label to the user.
 
 ### Deployment -- AWS EC2
-Both the applications are dockerised using docker-compose and finally deployed on AWS EC2 instance.
+Both the applications are dockerised using docker-compose and finally deployed on AWS EC2 instance. <br /><br />
 
-Note :- 1. Make sure to change the URLs with the Public DNS address in the application while sending request to the Flask web app.
-         2. Also ensure to implement the cross origin policy in the web app otherwise request from the react application will be blocked.
+*Note :- 1. Make sure to change the URLs with the Public DNS address in the application while sending request to the Flask web app.
+         2. Also ensure to implement the cross origin policy in the web app otherwise request from the react application will be blocked.*
 
 #### Before sending the request to the server
 
 ![alt text](/fashionMNIST-react-flask-docker/images/pic1.png?raw=true)
 
-#### After getting the inference output from backend server
+#### After getting the inference output from the backend server
 
 ![alt text](/fashionMNIST-react-flask-docker/images/pic2.png?raw=true)
 
