@@ -1,12 +1,7 @@
-# React + Flask Development Boilerplate
+# Fashion MNIST Classifier - Front end: React, REST endpoints: Flask web app, Container: Docker, Deployment: AWS EC2
 
 ## Overview
-Extremely lightweight development environment for a web application
-running a [React](https://reactjs.org/) front-end and 
-[Flask](http://flask.pocoo.org/) API back-end. The 
-front-end connects to the back-end by making HTTP requests for
-desired data. React and Flask are containerized and managed with 
-[Docker Compose](https://docs.docker.com/compose/).
+As part of this sample project, I have created simple webapplication which will take input as image from user and will do the inference at backend using pretrained deep learning model (fashionMNIST classifier). As a result of inference it will send the category or class name of the image and at the end application will display it to the user.
 
 ### Why Create React App?
 [Create React App](https://facebook.github.io/create-react-app/) allows 
@@ -66,15 +61,3 @@ Finally, to gracefully stop running our local servers, you can run
     docker-compose down
 
 in a separate terminal window or press __control + C__.
-
-
-## Future plans
-* Add boilerplate for running tests locally and through continuous integration.
-* Add boilerplate for configuring production-ready settings and deployment.
-
-
-## License
-Feel free to use the code in this repository however you wish. Details are provided in
-[LICENSE.md](LICENSE.md).
-
-
