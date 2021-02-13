@@ -1,7 +1,7 @@
 # Fashion MNIST Classifier - Front end: React, REST endpoints: Flask web app, Container: Docker, Deployment: AWS EC2
 
 ## Overview
-As part of this sample project, I have created simple webapplication which will take input as image from user and will do the inference at backend using pretrained deep learning model (fashionMNIST classifier). As a result of inference it will send the category or class name of the image and at the end application will display it to the user.
+As part of this sample project, I have created simple webapplication which will take input as image from the user and will do the inference at backend using pretrained deep learning model (fashionMNIST classifier). As a result of inference, it will send the category or class name of the image and finally output will be displayed to the user.
 
 ### Why Create React App?
 [Create React App](https://facebook.github.io/create-react-app/) allows 
