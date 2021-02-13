@@ -20,8 +20,8 @@ As a result it will send category details in json format to react app which will
 ### Deployment -- AWS EC2
 Both the applications are dockerised using docker-compose and finally deployed on AWS EC2 instance. <br /><br />
 
-*Note :- 1. Make sure to change the URLs with the Public DNS address in the application while sending request to the Flask web app.
-         2. Also ensure to implement the cross origin policy in the web app otherwise request from the react application will be blocked.*
+***Note :- 1. Make sure to change the URLs with the Public DNS address in the application while sending request to the Flask web app. <br />
+         2. Also ensure to implement the cross origin policy in the web app otherwise request from the react application will be blocked.***
 
 #### Before sending the request to the server
 
