@@ -1,0 +1,22 @@
+.formAlign {
+    margin-top: 100px;
+    margin-left: 500px;
+    display: flex;
+    justify-content: 'center';
+    align-items: 'center';
+}
+
+.margin-gap {
+    padding-top: 40px;
+}
+
+.image-align {
+    width: 200px;
+    height: 200px;
+    padding-top: 50px;
+    margin-left: 150px;
+}
+
+.category-align {
+    padding-top: 30px;
+    text-align: center;
