@@ -29,8 +29,10 @@ Both the applications are dockerised using docker-compose and finally deployed o
 
 #### Before sending the request to the server
 
-![alt text](/fashionMNIST-react-flask-docker/images/pic1.png?raw=true)
+![alt text](/LinearRegression_react_flask_docker_aws
+/images/pic1.png?raw=true)
 
 #### After getting the inference output from the backend server
 
-![alt text](/fashionMNIST-react-flask-docker/images/pic2.png?raw=true)
+![alt text](/LinearRegression_react_flask_docker_aws
+/images/pic2.png?raw=true)
