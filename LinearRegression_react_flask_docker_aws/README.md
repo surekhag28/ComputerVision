@@ -1,7 +1,7 @@
-# Fashion MNIST Classifier - Front end: React, REST endpoints: Flask web app, Container: Docker, Deployment: AWS EC2
+# Linear regression from scratch using Ordinary Least Score - Front end: React, REST endpoints: Flask web app, Container: Docker, Deployment: AWS EC2
 
 ## Overview
-As part of this sample project, I have created simple webapplication which will take input as image from the user and will do the inference at backend using pretrained deep learning model (fashionMNIST classifier). As a result of inference, it will send the category or class name of the image and finally output will be displayed to the user.
+As part of this sample project, I have created simple web application which will take input as csv file containing dataset from the user. This csv file will be further sent to flask web app which will perform linear regression on training data at backend side and will send output as root mean square error, r sqaured score and trained coefficients. These statistics are then finally displayed to user using react frontend app.
 
 ### Docker Compose
 Docker maintains software and all of its dependencies within a "container", which can make collaborating and deploying simpler. 
@@ -10,12 +10,16 @@ Docker Compose is a tool for easily managing applications running multiple Docke
 Since the project involves development of two different applications, front end using React and  backend using Flask web app, we will need docker compose to containerise them and then finally deploying on AWS EC2 instance.
 
 ### Front end -- React App
-At the front end side we are taking input as image from the user and allows him/her to verify the category of the image by hitting 'Predict" button.
+At the front end side we are taking input as csv file from the user and by hitting the "Train" button, data will be sent to flask app where model will be trained using linear regression OLS. <br/>
+In order to perform inference on unknown/test data, user is allowed to enter the "X" value and hit the "Predict" button.
 
 ### Back end -- Flask web app
-Request from the user containing image as form data will be sent to concerned REST end point.
-The service will upload the image on server and will do the inference using pretrained deep learning model (fashionMNIST classifier).
-As a result it will send category details in json format to react app which will display the class label to the user.
+Request from the user containing csv file as form data will be sent to concerned REST end point.
+The service will upload csv file on the server and will train the model using linear regression OLS approach on train data.
+The model will compute Root Mean Square error and R-Squared on test data for inference.
+As a result/reponse it will send root mean square error, r sqaured score and trained coefficients to frontend app.
+Also for inference, when user hits the Predict button, at the backend it will receive trained coefficients which will help in computing the predicted "Y" value.
+
 
 ### Deployment -- AWS EC2
 Both the applications are dockerised using docker-compose and finally deployed on AWS EC2 instance. <br /><br />
