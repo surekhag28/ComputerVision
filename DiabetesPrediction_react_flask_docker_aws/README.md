@@ -1,7 +1,7 @@
 # Diabetes Predictor using RandomForest Regression - Front end: React, REST endpoints: Flask web app, Container: Docker, Deployment: AWS EC2
 
 ## Overview
-As part of this sample project, I have created simple web application which will take input as csv file containing dataset from the user. This csv file will be further sent to flask web app which will perform linear regression on training data at backend side and will send output as root mean square error, r sqaured score and trained coefficients. These statistics are then finally displayed to user using react frontend app.
+As part of this project, I have created Diabetes predictor using RandomForest regression which will take certain values from the user via frontend application and will send the inference output back to the them.
 
 ### Docker Compose
 Docker maintains software and all of its dependencies within a "container", which can make collaborating and deploying simpler. 
@@ -10,15 +10,13 @@ Docker Compose is a tool for easily managing applications running multiple Docke
 Since the project involves development of two different applications, front end using React and  backend using Flask web app, we will need docker compose to containerise them and then finally deploying on AWS EC2 instance.
 
 ### Front end -- React App
-At the front end side we are taking input as csv file from the user and by hitting the "Train" button, data will be sent to flask app where model will be trained using linear regression OLS. <br/>
-In order to perform inference on unknown/test data, user is allowed to enter the "X" value and hit the "Predict" button.
+At the front end side we are taking input values from the user and send it to the backend server via REST endpoints.
+After performing inference, it sends response back to the React application which finally displays predicted output as either :"Diabetes" or "No Diabetes" 
+depending on the given input.
 
 ### Back end -- Flask web app
-Request from the user containing csv file as form data will be sent to concerned REST end point.
-The service will upload csv file on the server and will train the model using linear regression OLS approach on train data.
-The model will compute Root Mean Square error and R-Squared on test data for inference.
-As a result/reponse it will send root mean square error, r sqaured score and trained coefficients to frontend app.
-Also for inference, when user hits the Predict button, at the backend it will receive trained coefficients which will help in computing the predicted "Y" value.
+After receiving the request and input values from the user, it loads pretrained machine learning model to perform inference on the test data and sends response 
+back in json format to the React App.
 
 
 ### Deployment -- AWS EC2
@@ -35,7 +33,7 @@ Both the applications are dockerised using docker-compose and finally deployed o
 
 ![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic2.png?raw=true)
 
-#### After Predicting output for unknown/test data where output is Diabetes
+#### After Predicting output for unknown/test data where output is Not Diabetes
 
 ![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic3.png?raw=true)
 
@@ -43,6 +41,6 @@ Both the applications are dockerised using docker-compose and finally deployed o
 
 ![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic4.png?raw=true)
 
-#### After Predicting output for unknown/test data where output is Not Diabetes
+#### After Predicting output for unknown/test data where output is Diabetes
 
 ![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic5.png?raw=true)
