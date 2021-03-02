@@ -29,12 +29,16 @@ Both the applications are dockerised using docker-compose and finally deployed o
 
 #### Before sending the request to the server
 
-![alt text](/LinearRegression_react_flask_docker_aws/images/pic1.png?raw=true)
+![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic1.png?raw=true)
 
 #### After Training the model at backend side
 
-![alt text](/LinearRegression_react_flask_docker_aws/images/pic2.png?raw=true)
+![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic2.png?raw=true)
 
 #### After Predicting output for unknown/test data
 
-![alt text](/LinearRegression_react_flask_docker_aws/images/pic3.png?raw=true)
+![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic3.png?raw=true)
+
+![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic4.png?raw=true)
+
+![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic5.png?raw=true)
