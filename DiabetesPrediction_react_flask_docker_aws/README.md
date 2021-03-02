@@ -1,4 +1,4 @@
-# Linear regression from scratch using Ordinary Least Score - Front end: React, REST endpoints: Flask web app, Container: Docker, Deployment: AWS EC2
+# Diabetes Predictor using RandomForest Regression - Front end: React, REST endpoints: Flask web app, Container: Docker, Deployment: AWS EC2
 
 ## Overview
 As part of this sample project, I have created simple web application which will take input as csv file containing dataset from the user. This csv file will be further sent to flask web app which will perform linear regression on training data at backend side and will send output as root mean square error, r sqaured score and trained coefficients. These statistics are then finally displayed to user using react frontend app.
@@ -31,14 +31,18 @@ Both the applications are dockerised using docker-compose and finally deployed o
 
 ![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic1.png?raw=true)
 
-#### After Training the model at backend side
+#### Input the values
 
 ![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic2.png?raw=true)
 
-#### After Predicting output for unknown/test data
+#### After Predicting output for unknown/test data where output is Diabetes
 
 ![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic3.png?raw=true)
 
+#### Input the values
+
 ![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic4.png?raw=true)
+
+#### After Predicting output for unknown/test data where output is Not Diabetes
 
 ![alt text](/DiabetesPrediction_react_flask_docker_aws/images/pic5.png?raw=true)
